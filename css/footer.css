@@ -1,0 +1,116 @@
+/* Footer Container */
+.footer {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  color: #555;
+  padding: 40px 0;
+}
+
+/* Bố cục hàng ngang */
+.footer .row {
+  display: flex; /* Sử dụng Flexbox */
+  flex-wrap: nowrap; /* Ngăn không cho các mục xuống hàng */
+  justify-content: space-between; /* Giãn đều các cột */
+  gap: 20px; /* Khoảng cách giữa các cột */
+}
+
+/* Căn chỉnh các cột trong Footer */
+.footer .col-md-3 {
+  flex: 1; /* Đảm bảo các cột có cùng kích thước */
+  max-width: 25%; /* Giới hạn chiều rộng mỗi cột */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px; /* Khoảng cách giữa các mục */
+}
+
+/* Tiêu đề trong Footer */
+.footer h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block; /* Đảm bảo chiều rộng chỉ chiếm chữ */
+}
+
+/* Gạch chân tiêu đề */
+.footer h6::after {
+  content: "";
+  display: block;
+  width: 100%; /* Gạch chân dài bằng chữ */
+  height: 3px;
+  background-color: #007bff; /* Màu xanh dương */
+  margin-top: 5px;
+  border-radius: 2px; /* Bo góc nhẹ */
+}
+
+/* Căn chỉnh Icon và văn bản */
+.footer p,
+.footer a {
+  display: flex; /* Dùng Flexbox để icon và chữ thẳng hàng */
+  align-items: center; /* Căn giữa icon và chữ theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa icon và chữ */
+  margin: 0; /* Loại bỏ khoảng cách không cần thiết */
+  color: #555;
+}
+
+/* Icon trong Footer */
+.footer i {
+  font-size: 1.4rem; /* Kích thước icon */
+  flex-shrink: 0;
+  color: #007bff;
+}
+
+/* Liên kết */
+.footer a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #007bff; /* Đổi màu khi hover */
+}
+
+/* Logo thương hiệu */
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Phần Bản quyền */
+.bg-secondary {
+  background-color: #343a40 !important;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .footer .row {
+    flex-wrap: wrap;
+  }
+
+  .footer .col-md-3 {
+    max-width: 100%;
+  }
+
+  .footer h6 {
+    font-size: 1rem;
+  }
+
+  .footer p,
+  .footer a {
+    font-size: 0.9rem;
+  }
+
+  .footer-logo {
+    max-width: 120px;
+  }
+}

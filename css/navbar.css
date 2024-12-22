@@ -1,0 +1,38 @@
+/* Navbar */
+.navbar {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* Logo và thương hiệu */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f8c146;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f8c146;
+  color: #fff;
+}
+
+/* Icon */
+.navbar-nav .nav-link i {
+  margin-right: 5px;
+}
