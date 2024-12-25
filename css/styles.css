@@ -1,0 +1,97 @@
+/* General Body Background */
+body {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+/* Card Styling */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: #333;
+}
+
+.card-title {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: #fff;
+  text-align: center;
+}
+
+.card-title img {
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Form Input Styling */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-control:focus {
+  border: 1px solid #4b6cb7;
+  box-shadow: 0 0 5px rgba(75, 108, 183, 0.5);
+}
+
+/* Button Styling */
+.btn-primary {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #182848, #4b6cb7);
+  box-shadow: 0px 5px 15px rgba(75, 108, 183, 0.4);
+  color: #fff;
+}
+
+/* Link Styling */
+.text-center a {
+  color: #4b6cb7;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.text-center a:hover {
+  color: #182848;
+  text-decoration: underline;
+}
+
+/* Illustration Image */
+.login-illustration {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin: 10px;
+  }
+
+  .login-illustration {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login-illustration {
+    width: 350px;
+  }
+}

@@ -1,0 +1,91 @@
+/* Navbar tổng thể */
+.navbar {
+  padding: 10px 20px;
+}
+
+/* Logo */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Căn giữa logo theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa logo và chữ */
+}
+
+/* Menu chính */
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Căn giữa tất cả mục menu theo chiều dọc */
+  gap: 15px; /* Khoảng cách giữa các mục menu */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center; /* Căn giữa icon và chữ trong menu */
+  gap: 5px; /* Khoảng cách giữa icon và chữ */
+  font-size: 0.9rem; /* Giảm kích thước chữ để đồng bộ với icon */
+  line-height: 1; /* Đảm bảo không có khoảng trắng thừa */
+  color: #fff; /* Màu chữ */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+.nav-link:hover {
+  color: #0d6efd; /* Màu khi hover */
+}
+
+/* Icon trong menu */
+.nav-link i {
+  font-size: 1.2rem; /* Đặt kích thước icon */
+  vertical-align: middle; /* Đặt icon thẳng hàng với chữ */
+}
+
+/* Dropdown trong menu */
+.dropdown-menu {
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center; /* Đảm bảo icon và chữ trong dropdown thẳng hàng */
+  gap: 8px; /* Khoảng cách giữa icon và chữ */
+}
+
+/* Nút hành động */
+.btn {
+  display: flex;
+  align-items: center; /* Căn giữa icon và chữ */
+  gap: 5px; /* Khoảng cách giữa icon và chữ */
+  font-size: 0.9rem; /* Đảm bảo kích thước chữ đồng bộ */
+  padding: 0.5rem 1rem; /* Khoảng cách trong nút */
+}
+
+.btn .badge {
+  font-size: 0.75rem;
+  padding: 0.4em;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+/* Dropdown tài khoản */
+.dropdown-toggle {
+  display: flex;
+  align-items: center; /* Căn giữa ảnh đại diện và chữ */
+  gap: 8px; /* Khoảng cách giữa ảnh và tên */
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-toggle img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Menu chuyển thành cột */
+    gap: 10px; /* Khoảng cách giữa các mục menu */
+  }
+}
