@@ -1,0 +1,61 @@
+/* Toàn bộ container */
+.auction-container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.auction-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Card đấu giá */
+.auction-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 15px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.auction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hình ảnh tròn */
+.auction-img-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  background-color: #f3e8e8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auction-img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Tên danh mục */
+.auction-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Hiệu ứng thêm */
+.auction-card:hover .auction-name {
+  color: #b87333; /* Màu đồng */
+}
+
+.auction-card:hover .auction-img-wrapper {
+  background-color: #ffe4e1; /* Màu nhẹ hơn khi hover */
+}

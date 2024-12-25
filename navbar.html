@@ -16,6 +16,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Menu chính -->
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" href="index.html">
@@ -34,31 +35,31 @@
           >
             <i class="bi bi-list"></i> Danh mục
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#"
-                ><i class="bi bi-diamond-fill"></i> Nhẫn</a
-              >
+              <a class="dropdown-item" href="#">
+                <i class="bi bi-diamond-fill"></i> Nhẫn
+              </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"
-                ><i class="bi bi-circle"></i> Vòng tay</a
-              >
+              <a class="dropdown-item" href="#">
+                <i class="bi bi-link"></i> Vòng Cổ
+              </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"
-                ><i class="bi bi-gem"></i> Dây chuyền</a
-              >
+              <a class="dropdown-item" href="#">
+                <i class="bi bi-watch"></i> Đồng Hồ
+              </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"
-                ><i class="bi bi-earbuds"></i> Hoa tai</a
-              >
+              <a class="dropdown-item" href="#">
+                <i class="bi bi-gem"></i> Trang Sức Đá Quý
+              </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"
-                ><i class="bi bi-watch"></i> Đồng hồ</a
-              >
+              <a class="dropdown-item" href="#">
+                <i class="bi bi-bag"></i> Phụ Kiện
+              </a>
             </li>
           </ul>
         </li>
@@ -95,9 +96,17 @@
 
       <!-- Nút Đăng nhập / Đăng ký -->
       <div class="d-flex">
-        <a href="dangki.html" class="btn btn-outline-light me-2">
-          <i class="bi bi-person-plus"></i> Đăng ký
-        </a>
+        <form class="d-flex me-3" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Tìm kiếm sản phẩm"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
         <a href="login.html" class="btn btn-outline-light">
           <i class="bi bi-box-arrow-in-right"></i> Đăng nhập
         </a>
